@@ -4,3 +4,7 @@
 addEventHandler("iblock",
     "OnBeforeIBlockElementUpdate",
     array("MyHandlers\ActiveEvent", "OnBeforeIBlockElementUpdateHandler"));
+
+//ex2-93
+addEventHandler("main",
+    "OnEpilog", array("MyHandlers\NotFoundEvent", "WhenPageNotFound"));
