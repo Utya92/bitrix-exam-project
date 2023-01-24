@@ -11,4 +11,8 @@ addEventHandler("main",
 
 //ex2-51
 addEventHandler("main", "OnBeforeEventAdd",
-    array("MyHandlers\MailEvent","OnBeforeEventAddHandler"));
+    array("MyHandlers\MailEvent", "OnBeforeEventAddHandler"));
+
+//ex2-95
+addEventHandler("main", "OnBuildGlobalMenu",
+    array("MyHandlers\CustomMenuBuilder", "MyOnBuildGlobalMenu"));
