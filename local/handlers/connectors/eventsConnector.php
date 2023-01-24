@@ -8,3 +8,7 @@ addEventHandler("iblock",
 //ex2-93
 addEventHandler("main",
     "OnEpilog", array("MyHandlers\NotFoundEvent", "WhenPageNotFound"));
+
+//ex2-51
+addEventHandler("main", "OnBeforeEventAdd",
+    array("MyHandlers\MailEvent","OnBeforeEventAddHandler"));
