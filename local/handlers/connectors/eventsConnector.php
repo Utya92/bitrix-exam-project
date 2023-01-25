@@ -16,3 +16,7 @@ addEventHandler("main", "OnBeforeEventAdd",
 //ex2-95
 addEventHandler("main", "OnBuildGlobalMenu",
     array("MyHandlers\CustomMenuBuilder", "MyOnBuildGlobalMenu"));
+
+//ex2-94
+addEventHandler("main", "OnBeforeProlog",
+    array("MyHandlers\SeoTools", "OnBeforePrologHandler"));
